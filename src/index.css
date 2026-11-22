@@ -1,0 +1,23 @@
+/* Variables de color de la marca Eagle Box */
+:root { --bg:#070b18; --card:#0f1830; --cyan:#22d3ee; --amber:#f59e0b; --text:#e6edf7; --muted:#8aa0c0; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Segoe UI', system-ui, sans-serif; color:var(--text);
+  background: radial-gradient(circle at 20% 0%, #12305a 0%, var(--bg) 55%); min-height:100vh; }
+.app { max-width: 520px; margin: 0 auto; padding: 40px 20px; }
+.app-header { text-align:center; margin-bottom: 24px; }
+.app-header h1 { margin:0; letter-spacing: 6px; color: var(--cyan); text-shadow: 0 0 18px #22d3ee88; }
+.app-header p { margin:4px 0 0; color: var(--amber); text-transform: uppercase; letter-spacing: 3px; font-size: 12px; }
+.card { background: var(--card); border:1px solid #22d3ee44; border-radius: 16px; padding: 24px; box-shadow: 0 0 40px #22d3ee22; }
+.card h2 { margin-top:0; font-size: 20px; }
+form { display:flex; flex-direction:column; gap:8px; }
+label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+input, select { padding: 12px; border-radius: 8px; border:1px solid #2b3d63; background:#0a1226; color:var(--text); font-size: 15px; }
+input:focus, select:focus { outline: 2px solid var(--cyan); }
+.ayuda { font-size: 12px; color: var(--muted); margin: 6px 0; }
+button { margin-top: 8px; padding: 14px; border:0; border-radius: 8px; font-weight: 700; font-size: 15px; cursor:pointer;
+  background: linear-gradient(90deg, var(--cyan), #3b82f6); color:#04101f; }
+.resultado { margin-top: 20px; padding: 16px; border-radius: 12px; background:#0a2a33; border:1px solid var(--cyan); display:flex; flex-direction:column; gap:6px; }
+.total { font-size: 32px; font-weight: 800; color: var(--cyan); }
+.badge { color: var(--amber); font-weight: 600; }
+.error { margin-top: 16px; color: #fca5a5; background:#3a1220; padding: 12px; border-radius: 8px; }
+.app-footer { text-align:center; margin-top: 24px; font-size: 12px; color: var(--muted); }
